@@ -1,7 +1,8 @@
 package com.funix.prj_321x.asm01.controller;
 
 import com.funix.prj_321x.asm01.entity.User;
-import com.funix.prj_321x.asm01.service.AdminService;
+import com.funix.prj_321x.asm01.service.AdminServiceImp;
+import com.funix.prj_321x.asm01.service.LoginService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HomeController {
 
-    private AdminService adminService;
+    private LoginService loginService;
 
-    public HomeController(AdminService adminService) {
-        this.adminService = adminService;
+    public HomeController(LoginService loginService) {
+        this.loginService = loginService;
     }
 
     @RequestMapping("/")
@@ -27,7 +28,7 @@ public class HomeController {
                         @RequestParam("password") String password,
                         Model theModel) {
 
-        User user = adminService.findUserByEmailPassword(email, password);
+        User user = loginService.findUserByEmailPassword(email, password);
 
         // Xác thực đăng nhập với email và pass, đưa vào các trang tương ứng với chức năng
 

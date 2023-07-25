@@ -5,6 +5,7 @@ import com.funix.prj_321x.asm01.entity.Role;
 import com.funix.prj_321x.asm01.entity.User;
 import com.funix.prj_321x.asm01.entity.UserDonation;
 import com.funix.prj_321x.asm01.service.AdminService;
+import com.funix.prj_321x.asm01.service.AdminServiceImp;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -90,9 +91,9 @@ public class AdminController {
                              @RequestParam("fullName") String fullName,
                              @RequestParam("phoneNumber") String phoneNumber,
                              @RequestParam("address") String address,
-                             @RequestParam("idRole") int idRole) {
+                             @RequestParam("roleId") int roleId) {
 
-        adminService.updateUser(userId, fullName, phoneNumber, address, idRole);
+        adminService.updateUser(userId, fullName, phoneNumber, address, roleId);
 
         return "redirect:/admin/showUsers";
     }

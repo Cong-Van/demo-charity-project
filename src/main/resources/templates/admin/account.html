@@ -363,7 +363,7 @@
                             </div>
                             <div class="col-6">
                               <label for="ct_id" class="col-form-label">Vai trò:</label>
-                              <select class="form-control" id="ct_id" name="idRole" required>
+                              <select class="form-control" id="ct_id" name="roleId" required>
                                 <option th:value="${user.role.id}" th:text="${user.role.roleName}" selected>Chọn loại vai trò</option>
                                 <th:block th:each="role : ${roles}">
                                   <option th:if="${user.role.id != role.id}" th:value="${role.id}" ><span th:text="${role.roleName}"></span></option>
