@@ -12,4 +12,4 @@ FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/asm01-0.0.1-SNAPSHOT.jar asm01.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","demo.jar"]
+ENTRYPOINT ["java","-jar","asm01.jar"]
