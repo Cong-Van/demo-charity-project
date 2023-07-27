@@ -10,14 +10,14 @@ the country. And it helps to make donation management easier.
 - Prerequisites
 
 Before you continue, ensure you meet the following requirements:
-* You have installed JDK 17 or over.
-* You are using an IDE and a DBMS (mysql or postgresql). Currently, using postgresql.
-* You can use demo on: https://demo-charity-project.onrender.com
+You have installed JDK 17 or over.
+You are using an IDE and a DBMS (mysql or postgresql). Currently, using postgresql.
+You can use demo on: https://demo-charity-project.onrender.com
 
 
 - Use
 
-Due to demo project. 1 default administrator account initially to access application
+Due to demo project. 1 default administrator account initially to access application.
 Email: admin@gmail.com
 Password: 113
 
@@ -25,14 +25,14 @@ Password: 113
 - List of features - LoF
 
 Admin:
-* Manage user list: Add, update, find, lock, unlock, delete User.
-* Manage donation list: Add, update, find, delete Donation.
-  Update donation: Can only be deleted on initialization.
-  Only donation status (Đang quyên góp), user can donate.
-* Confirm donation information (donation's money from users).
+Manage user list: Add, update, find, lock, unlock, delete User.
+Manage donation list: Add, update, find, delete Donation.
+Update donation: Can only be deleted on initialization.
+Only donation status (Đang quyên góp), user can donate.
+Confirm donation information (donation's money from users).
 
 User:
-* Donate to donations in donation status (Đang quyên góp).
+Donate to donations in donation status (Đang quyên góp).
 
 
 - Technologies Used
