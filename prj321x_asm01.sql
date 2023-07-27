@@ -55,7 +55,7 @@ insert into role values(1, "ADMIN"), (2, "USER");
 
 insert into `user`(address, email, full_name, `password`, phone_number,
 				`status`, username, role_id)
-			values("12 Quang Trung", "luv2code@gmail.com", "Nguyễn Huy", "113", "0325164899",
+			values("12 Quang Trung", "admin@gmail.com", "Nguyễn Huy", "113", "0325164899",
 					1, "huynguyen", 1),
                   ("21 Nguyễn Huệ", "ngoc@gmail.com", "Minh Ngọc", "115", "0328464852",
 					0, "minhngoc", 2);
