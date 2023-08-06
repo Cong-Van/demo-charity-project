@@ -42,6 +42,7 @@ Docker and Render website to deploy.
 
 
 - Deploy on Render
+
 Add Dependencies Postgresql.
 Create Postgres database on Render and modify connection params in application file. 
 Create Docker file and config. 
